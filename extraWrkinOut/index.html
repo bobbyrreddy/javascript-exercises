@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Subtract the numbers in the array, starting from the left:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+let numbers = [175, 50, 25, 56, 78, 98,9,2,1,3];
+let rm = [4, 2, 1, 50];
+
+const num1 = [1,6,8,0];
+const r = [6,0];
+
+
+
+            function remove(list, ...removal) {
+            
+                let li = list;
+                let re = removal;
+            
+                console.log(li);
+                console.log(re);
+            
+            
+                //let lL = list.lenght;
+                console.log(li.length);
+                console.log(re.length);
+            
+            
+                for (let i = 0; i < li.length; i++) {
+                    console.log(li.includes(re[i]), `in for loop `);
+                    if (li.includes(re[i])) {
+                        let x = li.indexOf(re[i]);
+                        console.log(li.indexOf(re[i]), `in if statement `);
+                        
+                        
+                        li.splice(x,1);
+                        
+                    }
+                    re.splice(i,1);
+                }
+
+            
+                console.log(li);
+                return li;
+
+                console.log();
+                console.log();
+            
+            
+
+
+            }
+
+remove([1, 2, 3, 4], 1, 2, 3, 4);
+
+
+// let a ;
+
+// console.log(numbers);
+// console.log(numbers[4]);
+
+// console.log(rm);
+// console.log(rm[1]);
+
+// console.log(numbers.includes(50));
+// console.log(numbers.indexOf(98));
+// console.log(numbers.splice(4,1));
+
+
+// console.log(num1.includes(6),'num1');
+// console.log(num1.includes(r[0]),'num, r');
+
+
+
+// function remove(thArray, ...toBremoved) {
+
+    
+//     const arrLth=thArray.length;
+//     const rmovLth=toBremoved.length;
+
+//     function toArry(total, num) {
+//         let i=[];
+//         i=i
+        
+//     }
+
+
+
+//     console.log(thArray.includes(6),'thArray');
+//     console.log(typeof toBremoved[0][0],'thArray, tofArg');
+
+
+    
+//     for (let i = 0; i < toBremoved.length; i++) {
+//         console.log(" inside for loop");
+//         console.log(thArray.includes(toBremoved[0]));
+
+//         if (thArray.includes(toBremoved[i])) {
+
+//             console.log(" inside if");
+//             console.log (thArray.indexOf(toBremoved[i]));
+
+//         }
+
+        
+//     }
+    
+//    // console.log(thArray.indexOf(toBremoved[0]));
+
+
+
+//     return thArray;
+// }
+
+// remove(num1, r);
+
+
+
+
+
+
+// {
+
+
+
+// }
+
+
+
+
+</script>
+
+</body>
+</html>

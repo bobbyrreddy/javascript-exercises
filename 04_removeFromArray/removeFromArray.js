@@ -1,4 +1,10 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr, ...rm) {
+
+        let arL = arr.lenght;
+        let rmL = rm.length;
+
+        for
+
 
 };
 

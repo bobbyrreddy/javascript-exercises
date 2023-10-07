@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of num</title>
+</head>
+<body>
+    <h1> sum of all numbers </h1>
+
+
+
+    <script>
+console.log( (typeof "90")==='number max');
+console.log( (typeof 10)==='number');
+     
+        function sum(min,max) {
+               
+
+                    if (((typeof min)==='number') && ((typeof max)==='number')) {
+
+                        return('ERROR');
+                    }
+
+                    if (min<0||max<0) {
+
+                        return('ERROR');
+
+                    }
+
+                    if(min>max)
+                    {
+                        const t=min;
+                        min=max;
+                        max=t;
+                    }
+                    
+                    let sum = 0
+                    for (let i = min; i <= max; i++) {
+                        sum = sum +i;
+                        
+                    }
+
+                    return sum;
+
+                }
+
+       console.log( sum (10,"90"));
+
+
+
+
+    </script>
+</body>
+</html>

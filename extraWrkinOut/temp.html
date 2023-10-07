@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp</title>
+</head>
+<body>
+    <h1>to convert temp </h1>
+
+    <script>
+
+const convertToCelsius = function(temp) {
+
+const fTc = (((temp - 32)*5)/9);
+
+if(Number.isInteger(fTc)) {  
+    
+    console.log (typeof fTc );
+    return fTc;
+}
+else {                      
+    
+    console.log (typeof Number((fTc.toFixed(1)) ));
+    return Number(fTc.toFixed(1));
+}
+
+}
+
+
+
+        function celsiusToFarhenhite(temp) {
+
+            return (((((temp*9))/5)+32).toFixed(1));
+
+
+            
+        }
+
+        convertToCelsius(32);
+        convertToCelsius(100);
+
+        // console.log (`0 celcius  to ${celsiusToFarhenhite( 0 )} F`);
+        // console.log (`73.2 celcius  to ${celsiusToFarhenhite( 73.2 )} F`);
+        // console.log (`-10 celcius  to ${celsiusToFarhenhite( -10 )} F`);
+
+        // console.log (` - 32 F to ${farhenhiteToCelsius( 32 )} celcuis`);
+        // console.log (` - 100 F to ${farhenhiteToCelsius( 100 )} celcuis`);
+        // console.log (` - -100  F to ${farhenhiteToCelsius( -100 )} celcuis`);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divisibility</title>
+</head>
+<body>
+    <h1>this is to check divisibility</h1>
+
+    <script>
+        
+
+        let y1= 1984;
+        y2= 1988;
+
+        function checkLeapYear(year) {
+
+            if (year % 400 === 0) {
+
+                console.log('its a leap year 400');
+                return('divied by 400');
+                
+            } else if (year % 100 === 0){
+
+                console.log('its a not leap year 100');
+                return('divied by 100');
+
+            } else if (year % 4 === 0){
+
+                console.log('its a leap year 4');
+                return('divied by 4');
+            }
+            else {
+                console.log('its not a leap year');
+            }
+        }
+
+        checkLeapYear(1900);
+
+
+    </script>
+</body>
+</html>
